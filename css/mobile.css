@@ -1,0 +1,495 @@
+/* U N I V E R S A L */
+
+* {
+    margin: 0px;
+}
+
+body {
+    min-height: 100%;
+}
+
+/* T Y P O G R A P H Y */
+
+h1 {
+    font-family: 'Glegoo', serif;
+    font-weight: 600;
+    font-size: 7.5em;
+    text-decoration: none;
+    line-height: 1em;
+}
+
+h2 {
+    font-family: 'Glegoo', serif;
+    font-weight: 200;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* H E A D E R */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 108vw;
+}
+
+#logo {
+    display: none;
+}
+
+/* N A V */
+
+nav {
+    display: none;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    color: white;
+    font-family: 'Glegoo', serif;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 100px;
+}
+
+
+#hamburger {
+    display: inline;
+    font-size: 2em;
+}
+
+
+/* L A N D I N G */
+
+#landing, #page, #team, #admin, #alumni {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 3% 10% 14% 10%;
+}
+
+#page {
+    min-height: 79vh;
+}
+
+#landing {
+    margin: 0% 10% 3% 5%;
+}
+
+#landing img {
+    height: 30vh;
+    margin-left: -5%;
+}
+
+#landing p, #page p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    width: 80vw;
+    line-height: 1.4em;
+    padding: 3% 0% 3% 0%;
+}
+
+
+/*  A R R O W  */
+
+.arrow {
+    display: none;
+}
+
+
+/* C H E V R O N */
+
+.chevron {
+     position: relative;
+    top: 6vh;
+    display: inline-block;
+    min-width: 110%;
+    height: 3000px;
+    padding: 15px 0;
+    margin-right: -30px;
+    background: black;
+    -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 80%, 51% 100%, 0 80%, 0 0);
+    clip-path: polygon(50% 10%, 100% 0, 100% 80%, 51% 90%, 0 80%, 0 0);
+    z-index: -200;
+    /*    text-overflow: ellipsis;*/
+    margin: 0px;
+}
+
+
+/* Q U O T E S */
+
+
+#quotes {
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    shape-outside: polygon(50% 20%, 100% 0, 100% 80%, 51% 100%, 0 80%, 0 0);
+    margin-top: 40%;
+    margin-bottom: 25%;
+    
+}
+
+
+#quotes p {
+    font-family: 'Glegoo', serif;
+    font-size: 2.5em;
+    width: 80vw;
+    line-height: 1.7em;
+    color: white;
+    margin: 1.5% 0% 1.5% 0%;
+}
+
+.right p {
+    text-align: right;
+} 
+
+#quotes h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+#quotes section {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0% 10% 0%;
+}
+
+.left {
+    padding-left: 10%;
+}
+
+.right {
+    align-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10%;
+    text-align: right;
+}
+
+
+
+
+
+ /* C A L L   T O   A C T I O N */
+
+#call-to-action {
+    width: 108vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;  
+}
+
+#call-to-action h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 75vw;
+    margin-bottom: 3%;
+}
+
+#call-to-action h2 {
+    width: 15%;
+}
+
+
+
+
+/* T E A M */
+
+#team, #admin, #alumni {
+    width: 110vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 3% 0% 14% 0%;
+}
+
+#team-wrapper, #admin-wrapper, #revyo-wrapper, #alumni-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    margin-top: 3%;
+}
+
+#revyo-wrapper {
+    justify-content: center;
+}
+
+#revyo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 5% 5% 5%;
+}
+
+#revyo h2 {
+    width: 100vw;
+    text-align: center;
+    font-size: 3em;
+}
+
+#team-wrapper article, #admin-wrapper article, #revyo-wrapper article, #alumni-wrapper article {
+    width: 48%;
+    height: 50%;
+/*    background-color: rgba(0,0,0,0.04);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 1% 0% 1% 0%;
+}
+
+#alumni-wrapper article {
+    margin: 7% 0% 7% 0%;
+}
+
+#team #team-wrapper img, #admin #admin-wrapper img, #admin #revyo-wrapper img, #alumni #alumni-wrapper img{
+    width: 80%;
+    height: auto;
+}
+
+#team #team-wrapper a, #admin #admin-wrapper a, #admin #revyo-wrapper a, #alumni #alumni-wrapper a{
+    text-align: center;
+}
+/*
+
+#team-wrapper #double-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+*/
+
+#team-wrapper img:hover, #admin-wrapper img:hover, #revyo-wrapper img:hover, #alumni-wrapper img:hover {
+   opacity: 0.5;
+}
+
+#team-wrapper article h6, #admin-wrapper article h6, #reyyo-wrapper article h6, #alumni-wrapper article h6 {
+    font-family: 'Glegoo', serif;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#revyo h6 {
+     font-family: 'Glegoo', serif;
+    font-weight: 500;
+    font-size: 0.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+#team-wrapper article h4, #admin-wrapper article h4, #revyo-wrapper article h4, #alumni-wrapper article h4 {
+    font-family: 'Glegoo', serif;
+    font-weight: 500;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#team-wrapper article p, #admin-wrapper article p, #alumni-wrapper article p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    text-align: center;
+    width: 75%;
+}
+
+#revyo p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: 2.3em;
+    text-align: center;
+    width: 75%;
+}
+
+#team-wrapper article h5, #admin-wrapper article h5, #alumni-wrapper article h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: center;
+    font-weight: 400;
+     color: rgba(0,0,0,0.5);
+}
+
+#revyo h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5em;
+    line-height: 0.7em;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+
+
+/* F O O T E R */
+
+footer {
+    background-color: black;
+    padding: 1%;
+    position: relative;
+    bottom: 0;
+    width: 108vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+footer #contact {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 2%;
+}
+
+footer #contact a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+footer #contact a:hover {
+    color: rgba(255,255,255,0.5);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 0px;
+    padding: 0px;
+}
+
+footer ul li {
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+    padding: 3% 4% 6% 3%;
+}
+
+footer img {
+    height: 3.5vh;
+    transition-duration: 0.4s;
+}
+
+
+
+/* A L W A Y S   T R U E */
+
+#invisible {
+    opacity: 0;
+}
+
+#invisible:hover {
+    opacity: 0;
+}
+
+a {
+    transition-duration: 0.4s;
+}
+
+
+/* B U T T O N S */
+
+button {
+    padding: 16px 32px;
+    display: inline-block;
+    margin: 20px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: black; 
+    border: 2px solid black;
+    
+    font-family: 'Glegoo', serif;;
+    color: white; 
+    font-weight: 500;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* M E D I A   Q U E R I E S */
+
+
+
+
+
+
+
+/*
+font-family: 'Glegoo', serif;
+font-family: 'Open Sans', sans-serif;*/

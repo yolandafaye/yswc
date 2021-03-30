@@ -1,0 +1,597 @@
+/* U N I V E R S A L */
+
+* {
+    margin: 0px;
+}
+
+
+/* T Y P O G R A P H Y */
+
+h1 {
+    font-family: 'Glegoo', serif;
+    font-weight: 600;
+    font-size: 4.5em;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Glegoo', serif;
+    font-weight: 200;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* H E A D E R */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+}
+
+/* L O G O */
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+}
+
+#logo img {
+    height: 10vh;
+}
+
+#logo h3 {
+   font-family: 'Glegoo', serif;
+    font-weight: 200;
+    font-size: 1em;
+    padding: 0.5%;
+}
+
+#logo h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo h3 a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+
+/* N A V */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+    
+    width: 50vw;
+}
+
+
+nav ul {
+    width: 50vw;
+    padding-right: 4%;
+    text-align: right;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: black;
+    font-family: 'Glegoo', serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+nav ul li a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+#myNav {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+/* L A N D I N G */
+
+#landing, #page, #team, #admin, #alumni {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 3% 10% 10% 10%;
+}
+
+#landing {
+    margin: 0% 10% 3% 10%;
+}
+
+#landing img {
+    height: 30vh;
+    margin-left: -2%;
+}
+
+#landing p, #page p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 50vw;
+    line-height: 1.4em;
+}
+
+/* T Y P E W R I T E R   E F F E C T */
+#landing h1, #page h1, #team h1, #admin h1, #alumni h1 {
+    border-right: .15em solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+
+    /*animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.*/
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 5s steps(24, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#landing h1 {
+    width: 13em;
+}
+
+#page h1 {
+    width: 6.5em;
+}
+
+#team h1 {
+    width: 3em;
+}
+
+#alumni h1 {
+    width: 5em;
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+    
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}
+
+
+/*  A R R O W  */
+
+.bounce {
+    /*arrow bouncing duration*/
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -27px;
+    width: 60px;
+    height: 70px;
+    z-index: 1000;
+    /*change with size of arrow to make it sit on bottom of page*/
+}
+
+.arrow img {
+    width: 40px;
+    height:40px;
+}
+
+a.down-arrow i {
+    display: block;
+    color: #fff;
+    /*arrow color*/
+    opacity: 1;
+    /*arrow opacity*/
+    font-size: 2rem;
+    /*arrow size*/
+}
+
+.down-arrow svg.svg-inline--fa:hover {
+    opacity: 0.5;
+    /*arrow hover opacity*/
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    }
+    60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    }
+    60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    }
+}
+
+
+/* C H E V R O N */
+
+.chevron {
+    position: relative;
+    top: 6vh;
+    display: inline-block;
+    min-width: 100vw;
+    height: 1300px;
+    padding: 15px 0;
+    margin-right: -30px;
+    background: black;
+    -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 80%, 51% 100%, 0 80%, 0 0);
+    clip-path: polygon(50% 20%, 100% 0, 100% 80%, 51% 100%, 0 80%, 0 0);
+    z-index: -200;
+}
+
+#quotes {
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    shape-outside: polygon(50% 20%, 100% 0, 100% 80%, 51% 100%, 0 80%, 0 0);
+    margin-top: 25%;
+    margin-bottom: 25%;
+    
+}
+
+
+/* Q U O T E S */
+
+#quotes p {
+    font-family: 'Glegoo', serif;
+    font-size: 1.5em;
+    width: 50vw;
+    line-height: 1.4em;
+    color: white;
+    margin: 1.5% 0% 1.5% 0%;
+}
+
+.right p {
+    text-align: right;
+} 
+
+#quotes h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+#quotes section {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    padding-left: 10%;
+}
+
+.right {
+    align-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10%;
+}
+
+
+
+
+
+/* C A L L   T O   A C T I O N */
+
+#call-to-action {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#call-to-action h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#call-to-action h2 {
+    width: 15%;
+}
+
+
+
+
+/* T E A M */
+
+#team-wrapper, #admin-wrapper, #revyo-wrapper, #alumni-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+
+#revyo-wrapper {
+    justify-content: center;
+}
+
+#revyo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 5% 5% 5%;
+}
+
+#team-wrapper article, #admin-wrapper article, #revyo-wrapper article, #alumni-wrapper article {
+    width: 32%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 2% 0% 4% 0%;
+}
+
+#revyo-wrapper article {
+    margin-bottom: 1%;
+}
+
+#team #team-wrapper img, #admin #admin-wrapper img, #admin #revyo-wrapper img, #alumni #alumni-wrapper img{
+    width: 80%;
+    height: auto;
+}
+
+#team #team-wrapper a, #admin #admin-wrapper a, #admin #revyo-wrapper a, #alumni #alumni-wrapper a{
+    text-align: center;
+}
+
+#team-wrapper img:hover, #admin-wrapper img:hover, #revyo-wrapper img:hover, #alumni-wrapper img:hover {
+   opacity: 0.5;
+}
+
+#team-wrapper article h6, #admin-wrapper article h6, #reyyo-wrapper article h6, #alumni-wrapper article h6, #revyo h6{
+    font-family: 'Glegoo', serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+#team-wrapper article h4, #admin-wrapper article h4, #revyo-wrapper article h4, #alumni-wrapper article h4, #revyo h4 {
+    font-family: 'Glegoo', serif;
+    font-weight: 600;
+    font-size: 1.65em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0%;
+}
+
+#team-wrapper article p, #admin-wrapper article p, #revyo p, #alumni-wrapper article p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    line-height: 1.4em;
+    text-align: center;
+    width: 85%;
+}
+
+#revyo p {
+    width: 60%;
+}
+
+#team-wrapper article h5, #admin-wrapper article h5, #revyo h5, #alumni-wrapper article h5, #revyo h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+/*    line-height: 0em;*/
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+}
+
+
+
+/* F O O T E R */
+
+footer {
+    background-color: black;
+    padding: 1%;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+footer #contact {
+    display: inline;
+    width: 50%;
+}
+
+footer #contact a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding-left: 3%;
+}
+
+footer #contact a:hover {
+    color: rgba(255,255,255,0.5);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3%;
+    width: 50%;
+}
+
+footer ul li {
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+footer img {
+    height: 3.5vh;
+    transition-duration: 0.4s;
+}
+
+footer img:hover {
+    opacity: 0.5;
+}
+
+
+
+/* A L W A Y S   T R U E */
+
+#invisible {
+    opacity: 0;
+}
+
+#invisible:hover {
+    opacity: 0;
+}
+
+a {
+    transition-duration: 0.4s;
+}
+
+
+
+/* B U T T O N S */
+
+button {
+    padding: 16px 32px;
+    display: inline-block;
+    margin: 20px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: black; 
+    border: 2px solid black;
+    
+    font-family: 'Glegoo', serif;;
+    color: white; 
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+nav button {
+    margin: 0px;
+    padding: 1% 4%;
+}
+
+#triangle-wrapper {
+    max-height: 160px;
+}
+
+
+/*
+font-family: 'Glegoo', serif;
+font-family: 'Open Sans', sans-serif;*/
